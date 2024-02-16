@@ -1,0 +1,32 @@
+h1{
+    color: slateblue;
+}
+
+body{
+    /* background-color: antiquewhite; */
+
+    height: 100vh; /*this gives full height to the body and is in comparision with the viewport height available to use on the screen*/
+
+    background-image: url('cute-bear.png');
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+
+    background-repeat: no-repeat;
+    /* if the background image is small compared to the height and width of the body, html fills the rest of the page with the same image, kind of repeating the image. So if we want modify this we can use this feature in order to modify the repeat either for x-axis or y-axis or no-repeat at all, like repeat-x means repeat the image only on the horizontal axis or x axis similary for repeat-y and no repeat means ony one image */
+
+    background-position: 20px 40px;  
+    /* 20px from horizontal axis(X-axis or left) and 40 px from vertical axis(y-axis or top). 
+    background-poisition has a by default value of top left that means if you insert an image, it will placed at top left of the page. */
+
+    /* background-size has three major values, auto being the defualt property. It's goint to stick with the original height-width*/
+    /* background-size: cover; */
+    /* stretches or re-sizes the image to cover the whole page, basically cover the area given to us. */
+
+    /* background-size: contain; */
+    /* it has to show the complete image even if the container/window is shrinking. the whole image should be visible inside the container */ 
+
+    /* background-attachment: fixed; */
+    /*the background image is fixed even though the webpage is scrollable  */
+    
+
+}

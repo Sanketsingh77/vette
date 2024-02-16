@@ -1,0 +1,20 @@
+:root
+{
+    --theme-color: rgb(68, 140, 175);
+    --secondary-color: seagreen;
+    /* whatever variable we declare in root will be accessible throughout the css  */
+    --margin-top: 60px;
+}
+h1
+{
+    color: var(--theme-color);
+}
+p
+{
+    color: var(--secondary-color);
+}
+div
+{
+    color: var(--theme-color);
+    margin-top: var(--margin-top);
+}

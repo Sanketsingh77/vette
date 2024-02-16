@@ -1,0 +1,43 @@
+/* to nullify all the default css being applied */
+*{
+    margin: 0;
+}
+.container
+{
+    height: 100vh;
+    display: grid;
+    /* while we define grid, it is mandatory we define how many no of rows and column we want. */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 1fr means 1 fractional ratio, this divides the page into rows and columns with the specified width , 2 dimensions means 2 rows/columns*/
+    row-gap: 1rem; 
+    /* gap between each row will be 1 rem  */
+    column-gap: 1rem;
+}
+/* .item
+{
+    width: 150px;
+    height: 150px;
+    hardcoded width and height will not allow the grid to occupy the complete area.
+} */
+.item1
+{
+    background-color: rgb(192, 8, 72);  
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item2
+{
+    background-color: rgb(118, 48, 48);
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+.item3
+{
+    background-color: rgb(0, 0, 0);
+}
+.item4
+{
+    background-color: rgb(255, 0, 0);
+}

@@ -1,0 +1,32 @@
+body
+{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container{
+    display: flex;
+}
+.item
+{
+    width: 100px;
+    height: 100px;
+}
+.item1
+{
+    background-color: red;
+}
+.item2
+{
+    background-color: seagreen;
+}
+.item3
+{
+    background-color: blue;
+}
+.item4
+{
+    background-color: yellowgreen;
+}

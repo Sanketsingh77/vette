@@ -1,0 +1,43 @@
+*
+{
+    text-align: center;
+}
+
+h1
+{
+    font-size: 80px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+    *
+{
+    text-align: center;
+}
+
+    h1
+    {
+        font-size: 50px;
+    }
+    .heading2
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:500px)
+{
+    *
+{
+    text-align: center;
+}
+
+    h1
+    {
+        font-size: 30px;
+        visibility: hidden;
+    }
+    .heading2
+    {
+        display: block;
+    }
+}

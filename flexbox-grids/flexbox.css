@@ -1,0 +1,53 @@
+/* to nullify all the default css being applied */
+*{
+    margin: 0;
+}
+
+.container
+{
+    display: flex;
+    /* this allows the container to go into flexmode and it changes the flow of the container . By default nature of flex is row manner.If display is not set to flex then the flow will be column wise for placing divs
+    The direction of the boxes will be in row-wise manner.To alter that we use flex-direction */
+    flex-direction: row;
+
+    /* Suppose we want to place the boxes at different positions on our main axis then we can use justify-content property of the flex. */
+    /* justify-content:center; */
+    /* to place the flexbox at the center*/
+    justify-content: flex-end; 
+    /* whenever we are working with our main axis then justify-content comes into play but if we change the flex-direction to column then the boxes will not appear to be at center this is beacuase of height of the container which is just taking as much height as the content and the height of the page is not set. for that we need to set the height of the container first then it will take the whole width of the page */
+    height: 100vh;
+
+    /*Now for the cross axis which is just perpendicular to the main axis, for cross axis we can use align-items to place the items to different positions on the axis*/
+    align-items: center;
+
+    /*what if we want to place the items in equidistant manner i.e from top one item then some space second item and then space third item. we can use the justify-content feature*/
+    /* justify-content: space-between;  */
+    /* it can place the contents equidistant from each other in the current row or the current column  */
+    justify-content: space-evenly;
+
+    /* order: 1 or -1(set order of individual item), align self: flex-end;(for alligning items individually) , flex-wrap: wrap;(Specifies whether flex items are forced on a single line or can be wrapped on multiple lines.)
+    The two properties flex-direction and flex-wrap are used so often together that the shorthand property flex-flow was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+    For example, you can use flex-flow: row wrap to set rows and wrap them. */
+
+
+    /* align-content : Aligns a flex container's lines within the flex container when there is extra space on the cross-axis. flex-start flex-end center space-between space-around space-evenly stretch (default)It is only useful when we are using flex wrap property, when our content is wrapped in multiple lines then align content helps in managing the space between the two lines created to wrap the content */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+.item
+{
+    width: 150px;
+    height: 150px;
+}
+.item1
+{
+    background-color: blanchedalmond;
+}
+.item2
+{
+    background-color: seagreen;
+}
+.item3
+{
+    background-color: purple;
+}

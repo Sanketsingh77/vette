@@ -1,0 +1,32 @@
+<!-- Supoose there's a layout where we have placed some divs and given some hardcoded margins and padding to those divs in order to create a structure. Now if someone reszies the window/changes the window size all of the orientation is going to get disturbed because we have given margins/paddings according to the current window size that we have opened. Using relative css units like em,rem,vh or vw is also not a full proof for sustainibility of the structure.
+
+That's where flexbox or flexible boxes comes into play. So even if we resize or shink/scale up the window size, the orientation will not change as it will resize the element in such way to keep the orientation as it was defined.
+
+Flexbox in general is a good practice to create layouts.
+
+We need a container/area to use flexboxes be it the whole page or a specific area. we need a boundary to play with the flexboxes. 
+
+Wherever is the direction of the flow of flexboxes, we call it as the main axis and exactly perpendicular to that axis is the cross axis.
+Main axis is the axis in which our boxes are actually placed, be it vertical or horizontal. If boxes are stacked up on each other the vertical axis is the main axis.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+        <div class="container">
+            <div class="item item1">Item 1</div>
+            <div class="item item2">Item 2</div>
+            <div class="item item3">Item 3</div>
+            <div class="item item1">Item 3</div>
+            <div class="item item2">Item 3</div>
+            <div class="item item3">Item 3</div>
+            <div class="item item1">Item 3</div>
+            <div class="item item2">Item 3</div>
+        </div>
+</body>
+</html>
