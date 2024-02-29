@@ -1,5 +1,49 @@
-div{
+#div{
     width: 100px;
     height: 100px;
     background-color: seagreen;
+    transition-property: all;
+    transition-duration: 3s; /*the duration of the transition*/
+    transition-delay: 1s; /*after we hover on the div, it will take 2seconds to start the transition*/
+    transition-timing-function: linear; /*basically to control the speed of the transition in and out*/
+
 }
+div:hover{
+    width: 300px;
+    /*we can also use transform property*/
+}
+
+/*animation properties gives us more features than transition properties*/
+
+#div2
+{
+    width: 200px;
+    height: 200px;
+    animation-name: demo;
+    animation-duration: 2s; /*duration of the animation will be divided according to number of keyframes*/
+
+    /*but if we want to make the animation run infinitely*/
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+/* at x% animation will look like this, more the number of keyframes the smoother will be the animation*/
+
+@keyframes demo{
+    0%{
+        background-color: beige;
+    }
+    25%
+    {
+        background-color: burlywood;
+    }
+    50%
+    {
+        background-color: cadetblue;
+    }
+    100%
+    {
+        background-color: palevioletred;
+    }
+}
+
