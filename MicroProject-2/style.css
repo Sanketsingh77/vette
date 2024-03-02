@@ -1,0 +1,73 @@
+*
+{
+    margin: 0;
+}
+/*nav bar section starts*/
+#nav
+{
+    background-color: #6F6AF7;
+    height: 10.5dvh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+}
+/*heading of project*/
+.dappr
+{
+    display: flex;  /*used flex to center the text inside the div*/
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    color:#FFFFFF;
+    font-family: Delius Unicase;  /*imported google font links inside head tag to use this font*/
+    font-size: 40px;
+}
+/*links of the nav bar*/
+.nav-links-div
+{
+    width: 50%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: DM Sans;
+    color: #FFFFFF;
+    font-size: 23px;
+}
+.link
+{
+    cursor: pointer;
+}
+.nav-menubar
+{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*search place*/
+.search
+{
+    display: flex;
+    justify-content: space-between; /*to space the the seach text and vector inside the search box*/
+    align-items: center;
+    font-family: DM Sans;
+    width: 44%;
+    height: 4.7vh;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 0 12px 4px 14px;
+    color:#9F9F9F;    
+}
+/*nav bar section ends*/
+
+/*main body of first page starts*/
+
+#first-page
+{
+    height: 200vh;
+    background-color: palegreen;
+    position: relative;
+    top: 180px;
+}
