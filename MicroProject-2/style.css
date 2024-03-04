@@ -2,6 +2,9 @@
 {
     margin: 0;
 }
+::-webkit-scrollbar {
+    /* width: 0px; */
+}
 /*nav bar section starts*/
 #nav
 {
@@ -64,10 +67,17 @@
 
 /*main body of first page starts*/
 
-#first-page
+#main-body
 {
-    height: 200vh;
+    height: 170dvh;
     background-color: palegreen;
     position: relative;
     top: 180px;
+
+    margin-left: 80px;
+    margin-right: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
